@@ -1,0 +1,12 @@
+seed: 42
+paths:
+  train_data: data/sample_preferences.jsonl
+  output_dir: outputs
+training:
+  method: dpo  # dpo | orpo | mock
+  beta: 0.1
+  lambda_orpo: 0.1
+  max_length: 512
+  batch_size: 2
+evaluation:
+  regression_prompts: docs/regression_prompts.md
