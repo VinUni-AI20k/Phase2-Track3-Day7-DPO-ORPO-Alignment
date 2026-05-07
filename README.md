@@ -36,9 +36,10 @@ pip install -e '.[dev,train]'
 | Time | Goal | Command |
 |---|---|---|
 | 0-30 min | Setup and inspect sample data | `make test` |
-| 30-65 min | Implement dataset validation/collator | `pytest tests/test_data.py` |
-| 65-95 min | Implement DPO or ORPO TODO | `pytest tests/test_losses.py` |
-| 95-115 min | Implement evaluation and report | `pref-lab evaluate --config configs/local.yaml` |
+| 30-50 min | Implement dataset validation/collator | `pytest tests/test_data.py` |
+| 50-70 min | (Optional) Generate synthetic data | `python scripts/generate_data.py` |
+| 70-100 min | Implement DPO or ORPO TODO | `pytest tests/test_losses.py` |
+| 100-115 min | Implement evaluation and report | `pref-lab evaluate --config configs/local.yaml` |
 | 115-120 min | One-minute demo | `cat outputs/metrics.json` |
 
 ## Repository layout
